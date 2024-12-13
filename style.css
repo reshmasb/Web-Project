@@ -1,0 +1,127 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background:#fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .container h1 {
+            font-size: 18px;
+            color: #ff4081;
+            margin-bottom: 20px;
+            text-align: center;
+
+        }
+
+        .dropdown-container {
+            display: flex;
+            gap: 10px; 
+            margin-top: 10px;
+        }
+
+        .dropdown-container select {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .box {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 15px;
+            cursor: pointer;
+            transition: border-color 0.3s;
+            position: relative;
+        }
+
+        .box:hover {
+            border-color: #007bff;
+        }
+
+        .box.active {
+            border-color: #007bff;
+            background: #e9f5ff;
+        }
+
+        .box .header {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .box .details {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .box.active .details {
+            display: block;
+
+        }
+
+        .details select {
+            width: 50%;
+            margin-top: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            flex: 1;
+            display: flex;
+        }
+
+        .details label {
+            font-size: 14px;
+            margin-top: 10px;
+            display: block;
+            color: #555;
+            display: flex;
+        }
+
+        .add-to-cart {
+            background: #ff4081;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background: #e03570;
+        }
+
+        .total {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .discount-tag {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #ff4081;
+            color: white;
+            font-size: 12px;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+
